@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:background="@drawable/biru"
+    tools:context=".MainActivity">
+
+    <com.github.florent37.materialtextfield.MaterialTextField
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#ffff"
+        app:mtf_image="@drawable/me">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/etName"
+            android:hint="Nama"
+            android:inputType="text"/>
+    </com.github.florent37.materialtextfield.MaterialTextField>
+
+    <com.github.florent37.materialtextfield.MaterialTextField
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#ffff"
+        app:mtf_image="@drawable/nik">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/etnim"
+            android:hint="Nik"
+            android:inputType="number"/>
+    </com.github.florent37.materialtextfield.MaterialTextField>
+
+    <com.github.florent37.materialtextfield.MaterialTextField
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#ffff"
+        app:mtf_image="@drawable/berita">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/etalamat"
+            android:hint="Alamat" />
+    </com.github.florent37.materialtextfield.MaterialTextField>
+
+    <Spinner
+        android:id="@+id/spin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </Spinner>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/buttonshape"
+            android:layout_marginTop="20dp"
+            android:text="Tambah"
+            android:fontFamily="@fonts/gotham"
+            android:textColor="#ffff"
+            android:layout_marginBottom="5dp"
+            android:id="@+id/btnTambah"/>
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/buttonshape"
+            android:layout_marginTop="20dp"
+            android:text="Tampil"
+            android:layout_marginLeft="90dp"
+            android:fontFamily="@fonts/gotham"
+            android:textColor="#ffff"
+            android:layout_marginBottom="5dp"
+            android:id="@+id/btnTampil"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>
